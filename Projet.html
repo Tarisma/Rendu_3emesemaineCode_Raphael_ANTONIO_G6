@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Projet.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body>
+    <header>
+        <a href="Projet2.html" class="hyperlien">S'inscrire</a>
+    </header>
+<!--Slider-->
+<div class="zoneDeSlide">
+    <div class="slides">
+        <div class="slide">
+            <img src="jetee-au-bord-lac-hallstatt-autriche_181624-44201.avif" alt="Slide 1">
+            <div class="zoneDeTexte">
+                <div class="texte">Les lacs de Hallstatt, terre d'Autriche</div>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="paysages-forestiers_71767-127.avif" alt="Slide 2">
+            <div class="zoneDeTexte">
+                <div class="texte">Paysages de foret, région du Poitou-Charentes</div>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="20150730_AnneJutras_web_0044_0042.webp" alt="Slide 3">
+            <div class="zoneDeTexte">
+                <div class="texte">Terres du Jutra, côtes du soir</div>
+            </div>
+        </div>
+    </div>
+    
+    <button class="prev" onclick="prevSlide()">&#10094; Précédent</button>
+    <button class="next" onclick="nextSlide()">Suivant &#10095;</button>
+</div>
+<!--Tabs-->
+<ul class="conteneur">
+    <li class="tab" onclick="openTab('tab1')">Créa&Design</li>
+    <li class="tab" onclick="openTab('tab2')">JV</li>
+    <li class="tab" onclick="openTab('tab3')">3D</li>
+    <li class="tab" onclick="openTab('tab4')">Communication</li>
+    <li class="tab" onclick="openTab('tab5')">Coding</li>
+</ul>
+
+<div id="tab1" class="contenu actif">
+    <h2>Explication de l'axe Créa&Design</h2>
+    <p>J'aime pas.</p>
+</div>
+
+<div id="tab2" class="contenu">
+    <h2>Explication de l'axe JV</h2>
+    <p>Trop bien  les gars, venez taffer avec moi.</p>
+</div>
+
+<div id="tab3" class="contenu">
+    <h2>Explication de l'axe 3D</h2>
+    <p>T'auras pas de vie mais chauffe-toi.</p>
+</div>
+
+<div id="tab4" class="contenu">
+    <h2>Explication de l'axe Communication</h2>
+    <p>Bah...? Mec... Pourquoi t'es pas à l'EMLV ?</p>
+</div>
+
+<div id="tab5" class="contenu">
+    <h2>Explication de l'axe Coding</h2>
+    <p>Je pense que ce site reflète mes capacités donc bon.</p>
+</div>
+
+<!--Bouton pour le Dark Mode-->
+    <div class="darkMode">
+        <label class="button">
+            <input type="checkbox" id="darkModeToggle">
+            <span class="slider round"></span>
+        </label>
+        Dark Mode
+    </div>
+   
+
+        <div class="onglet" id="myNavbar">
+            <a href="#home">Accueil</a>
+            <a href="#about">À Propos</a>
+            <a href="#contact">Contact</a>
+            <a href="javascript:void(0);" class="icon" onclick="toggleNavbar()">
+                &#9776;
+            </a>
+        </div>
+<script src="Projet.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</body>
+</html>

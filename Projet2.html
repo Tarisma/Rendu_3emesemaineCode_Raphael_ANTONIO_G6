@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <link rel="stylesheet" href="Projet2.css" class="hyperlien">
+    <form id="registrationForm" onsubmit="submitForm(event)">
+        <label for="email">Adresse Email:</label>
+        <input type="email" id="email" name="email">
+    
+        <label for="password">Mot de Passe:</label>
+        <input type="password" id="password" name="password">
+    
+        <label for="username">Pseudonyme:</label>
+        <input type="text" id="username" name="username">
+
+        <label for="axeChoice">Choix de l'axe</label>
+        <input type="text" id="axeChoice" name="axeChoice">
+    
+        <button type="submit">S'inscrire</button>
+    <!--Bouton pour le Dark Mode-->
+    <div class="darkMode">
+        <label class="button">
+            <input type="checkbox" id="darkModeToggle">
+            <span class="slider round"></span>
+        </label>
+        Dark Mode
+    </div>
+    <script src="Projet.js"></script>
+</body>
+</html>
